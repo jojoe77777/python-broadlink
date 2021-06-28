@@ -218,6 +218,7 @@ def discover(
 ) -> t.List[Device]:
     """Discover devices connected to the local network."""
     responses = scan(timeout, local_ip_address, discover_ip_address, discover_ip_port)
+    print('aaaaa')
     return [gendevice(*resp) for resp in responses]
 
 
